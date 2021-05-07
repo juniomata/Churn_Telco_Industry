@@ -35,7 +35,7 @@ __Value__: Allocate the cost as precise as possible
 - Encoding
 - Oversampling and Split Data to Training-Test
 
-![pic1](./pics/dataset_afterpreprocess.jpg)
+![pic1](./pics/dataset_afterpreprocess.JPG)
 
 ## Modeling
 - Using Logistic Regression algorithm
@@ -43,11 +43,11 @@ __Value__: Allocate the cost as precise as possible
 - Since the Retention Cost is lower than Acquistion Cost, it is better if our model has a lower number of customer who actually Churn but predicted as No Churn (False Negative). If that number is high, then the company needs to spend more than it should be. Therefore, we will use __Recall__ metrics.
 - Hyperparameter Tuning
 
-![pic2](./pics/hyperparam_comparison.jpg)
+![pic2](./pics/hyperparam_comparison.JPG)
 
 - Threshold Adjustment
 
-![pic3](./pics/threshold_comparison.jpg)
+![pic3](./pics/threshold_comparison.JPG)
     
 ![pic4](./pics/threshold.jpg)
 
@@ -55,11 +55,11 @@ __Value__: Allocate the cost as precise as possible
 # RESULTS
 - Confusion matrix of the tuned model (BEFORE threshold adjustment)
     
-![pic5](./pics/conf_matrix_log_tuned.jpg)
+![pic5](./pics/conf_matrix_log_tuned.JPG)
 
 - Confusion matrix AFTER threshold adjustment
     
-![pic6](./pics/conf_matrix_newthr.jpg)
+![pic6](./pics/conf_matrix_newthr.JPG)
 
 
 By adjusting threshold, the percentage customers who don't get a treatment and run away is decreasing from 15.69% to 11.48%. Meaning, Model A predict around 16 out of 100 customers are predicted as Not Churn but actually they leave the company's products. Meanwhile, using Model B (threshold adjustment), the customers who do not get a treatment and they leave, is only 11 out of 100 people. There was a decrease of up to 31.25%.
