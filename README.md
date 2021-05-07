@@ -49,7 +49,7 @@ __Value__: Allocate the cost as precise as possible
 
 ![pic3](./pics/threshold_comparison.JPG)
     
-![pic4](./pics/threshold.jpg)
+![pic4](./pics/threshold.JPG)
 
 
 # RESULTS
@@ -61,12 +61,13 @@ __Value__: Allocate the cost as precise as possible
     
 ![pic6](./pics/conf_matrix_newthr.JPG)
 
+__Business Implications__
 
-By adjusting threshold, the percentage customers who don't get a treatment and run away is decreasing from 15.69% to 11.48%. Meaning, Model A predict around 16 out of 100 customers are predicted as Not Churn but actually they leave the company's products. Meanwhile, using Model B (threshold adjustment), the customers who do not get a treatment and they leave, is only 11 out of 100 people. There was a decrease of up to 31.25%.
+By adjusting threshold, the percentage customers who don't get a treatment and run away is decreasing from 15.96% to 10.98%. Meaning, Model A predict around 16 out of 100 customers are predicted as Not Churn but actually they leave the company's products. Meanwhile, using Model B (threshold adjustment), the customers who do not get a treatment and they leave, is only 11 out of 100 people. There was a decrease of up to 31.25%.
 
-However, this adjustment causes the increasing of customer who get a treatment but actually do not churn from 19.91% to 24.29%. Model A predict around 20 out of 100 customers are predicted as Churn but actually they stay. Meanwhile, using Model B, the customers who get a treatment but actually they stay, is 24 out of 100 people. There was a increase of up to 20%.
+However, this adjustment causes the increasing of customer who get a treatment but actually do not churn from 22.46% to 27.28%. Model A predict around 22 out of 100 customers are predicted as Churn but actually they stay. Meanwhile, using Model B, the customers who get a treatment but actually they stay, is 27 out of 100 people. There was a increase of up to 22.7%.
 
-As stated in problem statement, Acquisition Cost is 5x higher than Retention Cost. Let's say the Acquisition Cost is 50 USD, meaning the Retention Cost is 10 USD. That means:
+As stated in problem section, Acquisition Cost is 5x higher than Retention Cost. Let's say the Acquisition Cost is 50 USD, meaning the Retention Cost is 10 USD. That means:
 - The total cost of using Model A is 1000 USD
 - The total cost of using Model B is 820 USD
 - Using __optimized model will reduce cost up to 19.6%__
